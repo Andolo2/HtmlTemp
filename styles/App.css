@@ -19,97 +19,36 @@ body {
   /* Header container */
 }
 .header > .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 20px;
   margin: 0 auto;
   color: #191919;
   font-family: "Inter", sans-serif;
-  /* Large screen layout */
   /* Logo section */
-  /* Middle section (contact info and menu links) */
+  /* Empty column */
   /* Link section (nav icons and login button) */
 }
-@media (min-width: 992px) {
-  .header > .container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 .header > .container .logo {
-  /* Large screen logo alignment */
-}
-@media (min-width: 992px) {
-  .header > .container .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 1; /* Occupies 2 columns */
 }
 .header > .container .logo .logo img {
   max-width: 100%;
   height: auto;
 }
-.header > .container .middle-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  font-weight: 300;
-  font-size: 12px;
-  /* Large screen layout adjustments */
-  /* Contact info section */
-  /* Menu links section */
-}
-@media (min-width: 992px) {
-  .header > .container .middle-section {
-    align-items: flex-start;
-    /* Horizontal rule style */
-  }
-  .header > .container .middle-section .hr {
-    border: 0.2px solid;
-    border-color: lightgray;
-    width: 100%;
-  }
-}
-.header > .container .middle-section .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* Large screen layout adjustments */
-  /* Individual contact content item */
-}
-@media (min-width: 992px) {
-  .header > .container .middle-section .contact-info {
-    flex-direction: row;
-  }
-}
-.header > .container .middle-section .contact-info .contact-content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  /* Large screen layout adjustments */
-  /* Icon style */
-}
-@media (min-width: 992px) {
-  .header > .container .middle-section .contact-info .contact-content .vl {
-    border-left: 1px solid;
-    height: 1rem;
-  }
-}
-.header > .container .middle-section .contact-info .contact-content .icon {
-  font-size: 20px;
-}
-.header > .container .middle-section .menu-links a {
-  color: #191919;
-  text-decoration: none;
-  margin: 0 10px;
-}
-.header > .container .middle-section .menu-links a:hover {
-  text-decoration: underline;
+.header > .container .empty-column {
+  grid-column: 3; /* Occupies 1 column */
 }
 .header > .container .link-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  grid-column: 5; /* Occupies 1 column */
   /* Navigation icons */
   /* Login button */
 }

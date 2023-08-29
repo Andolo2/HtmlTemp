@@ -7,25 +7,22 @@
 
     /* Header container */
     & > .container {
-        
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        gap: 20px;
         margin: 0 auto;
         color: $font-color-primary;
         font-family: $font-Inter;
 
-        /* Large screen layout */
-        @include lg {
-            display: flex;
-            justify-content: space-between;
-        }
+        
 
         /* Logo section */
         .logo {
-            /* Large screen logo alignment */
-            @include lg {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: span 1; /* Occupies 2 columns */
 
             .logo img {
                 max-width: 100%;
@@ -33,71 +30,9 @@
             }
         }
 
-        /* Middle section (contact info and menu links) */
-        .middle-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            font-weight: $font-weight-light;
-            font-size: 12px;
-
-            /* Large screen layout adjustments */
-            @include lg {
-                align-items: flex-start;
-
-                /* Horizontal rule style */
-                .hr {
-                    border: 0.2px solid;
-                    border-color: lightgray;
-                    width: 100%;
-                }
-            }
-
-            /* Contact info section */
-            .contact-info {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-
-                /* Large screen layout adjustments */
-                @include lg {
-                    flex-direction: row;
-                }
-
-                /* Individual contact content item */
-                .contact-content {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-
-                    /* Large screen layout adjustments */
-                    @include lg {
-                        .vl {
-                            border-left: 1px solid;
-                            height: 1rem;
-                        }
-                    }
-
-                    /* Icon style */
-                    .icon {
-                        font-size: 20px;
-                    }
-                }
-            }
-
-            /* Menu links section */
-            .menu-links {
-                a {
-                    color: $font-color-primary;
-                    text-decoration: none;
-                    margin: 0 10px;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
+        /* Empty column */
+        .empty-column {
+            grid-column: 3; /* Occupies 1 column */
         }
 
         /* Link section (nav icons and login button) */
@@ -106,6 +41,7 @@
             flex-direction: column;
             align-items: center;
             gap: 10px;
+            grid-column: 5; /* Occupies 1 column */
 
             /* Navigation icons */
             .nav-icons {
