@@ -2,5 +2,8 @@
 @import "./core/colors";
 @import "./core/responsive";
 @import "./core/fonts";
+@import "./core/mixin";
 
-@import "./components/NavigationStyle"
+@import "./components/NavigationStyle";
+
+@import "./components/jumbotron";

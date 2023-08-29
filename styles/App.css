@@ -16,18 +16,25 @@ body {
   color: #fff;
   padding: 10px;
   text-align: center;
+  /* Header container */
 }
 .header > .container {
-  max-width: 1200px;
   margin: 0 auto;
   color: #191919;
   font-family: "Inter", sans-serif;
+  /* Large screen layout */
+  /* Logo section */
+  /* Middle section (contact info and menu links) */
+  /* Link section (nav icons and login button) */
 }
 @media (min-width: 992px) {
   .header > .container {
     display: flex;
     justify-content: space-between;
   }
+}
+.header > .container .logo {
+  /* Large screen logo alignment */
 }
 @media (min-width: 992px) {
   .header > .container .logo {
@@ -47,10 +54,14 @@ body {
   gap: 10px;
   font-weight: 300;
   font-size: 12px;
+  /* Large screen layout adjustments */
+  /* Contact info section */
+  /* Menu links section */
 }
 @media (min-width: 992px) {
   .header > .container .middle-section {
     align-items: flex-start;
+    /* Horizontal rule style */
   }
   .header > .container .middle-section .hr {
     border: 0.2px solid;
@@ -62,6 +73,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  /* Large screen layout adjustments */
+  /* Individual contact content item */
 }
 @media (min-width: 992px) {
   .header > .container .middle-section .contact-info {
@@ -72,6 +85,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  /* Large screen layout adjustments */
+  /* Icon style */
 }
 @media (min-width: 992px) {
   .header > .container .middle-section .contact-info .contact-content .vl {
@@ -87,11 +102,16 @@ body {
   text-decoration: none;
   margin: 0 10px;
 }
+.header > .container .middle-section .menu-links a:hover {
+  text-decoration: underline;
+}
 .header > .container .link-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  /* Navigation icons */
+  /* Login button */
 }
 .header > .container .link-section .nav-icons {
   display: flex;
@@ -103,10 +123,84 @@ body {
 }
 .header > .container .link-section .login button {
   background-color: #EDCF87;
-  color: #fff;
+  width: 122px;
+  height: 48;
   border: none;
-  padding: 10px 20px;
+  padding: 5px 5px;
   cursor: pointer;
-  border-radius: 40%;
+  border-radius: 25px;
   color: black;
+}
+
+.jumbo {
+  background-color: #F0EFE9;
+  padding-top: 6rem;
+}
+.jumbo .container > .jumbotron {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .jumbo .container > .jumbotron {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .jumbo .container > .jumbotron .jumbo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .jumbo .container > .jumbotron .jumbo-text .jumbo-header > h2 {
+    font-size: xxx-large;
+  }
+}
+.jumbo .container > .jumbotron .jumbo-text .jumbo-buttons .base-button {
+  display: inline-block;
+  position: relative;
+  width: 208px;
+  height: 56px;
+  background-color: #EDCF87;
+  text-align: center;
+  line-height: 56px;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.jumbo .container > .jumbotron .jumbo-text .jumbo-buttons .base-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 16px 16px 0;
+  border-color: transparent #EDCF87 transparent transparent;
+}
+.jumbo .container > .jumbotron .jumbo-text .jumbo-buttons .arrow-icon {
+  position: absolute;
+  top: 20%;
+  right: 8px;
+  transform: translateY(0%) rotate(-45deg); /* Angle the arrow */
+  color: black; /* Arrow color */
+}
+.jumbo .container > .jumbotron .jumbo-text .swiggle {
+  display: none;
+}
+@media (min-width: 992px) {
+  .jumbo .container > .jumbotron .jumbo-text .swiggle {
+    display: inline;
+  }
+  .jumbo .container > .jumbotron .jumbo-text .swiggle > img {
+    width: 100%;
+  }
+}
+.jumbo .container > .jumbotron .jumpoProf > img {
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */

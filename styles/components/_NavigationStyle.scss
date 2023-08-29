@@ -1,41 +1,39 @@
 /* Header Styles */
 .header {
-    background-color:$color-theme-primary;
+    background-color: $color-theme-primary;
     color: #fff;
     padding: 10px;
     text-align: center;
 
-    
-
-
-
-     & > .container {
-        max-width: 1200px;
+    /* Header container */
+    & > .container {
+        
         margin: 0 auto;
         color: $font-color-primary;
         font-family: $font-Inter;
 
+        /* Large screen layout */
         @include lg {
             display: flex;
             justify-content: space-between;
-         }
-        
+        }
 
-         .logo{
-
+        /* Logo section */
+        .logo {
+            /* Large screen logo alignment */
             @include lg {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-             }
+            }
+
             .logo img {
                 max-width: 100%;
                 height: auto;
-    
-              
             }
-         }
+        }
 
+        /* Middle section (contact info and menu links) */
         .middle-section {
             display: flex;
             flex-direction: column;
@@ -43,68 +41,73 @@
             gap: 10px;
             font-weight: $font-weight-light;
             font-size: 12px;
-            
+
+            /* Large screen layout adjustments */
             @include lg {
-            
                 align-items: flex-start;
 
-                .hr{
+                /* Horizontal rule style */
+                .hr {
                     border: 0.2px solid;
                     border-color: lightgray;
                     width: 100%;
-                    
                 }
-
             }
-           
+
+            /* Contact info section */
             .contact-info {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                
-                @include lg {
-                
-                flex-direction: row;
 
+                /* Large screen layout adjustments */
+                @include lg {
+                    flex-direction: row;
                 }
+
+                /* Individual contact content item */
                 .contact-content {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                 
-                    @include lg{
-                        .vl{
+
+                    /* Large screen layout adjustments */
+                    @include lg {
+                        .vl {
                             border-left: 1px solid;
                             height: 1rem;
                         }
-
-
                     }
-                    
 
-                    
-
+                    /* Icon style */
                     .icon {
                         font-size: 20px;
                     }
                 }
             }
 
+            /* Menu links section */
             .menu-links {
                 a {
                     color: $font-color-primary;
                     text-decoration: none;
                     margin: 0 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
 
+        /* Link section (nav icons and login button) */
         .link-section {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
 
+            /* Navigation icons */
             .nav-icons {
                 display: flex;
                 gap: 10px;
@@ -114,16 +117,17 @@
                     text-decoration: none;
                 }
             }
-            
-            
+
+            /* Login button */
             .login {
                 button {
                     background-color: $color-theme-secondary-highlight;
-                    color: #fff;
+                    width: 122px;
+                    height: 48;
                     border: none;
-                    padding: 10px 20px;
+                    padding: 5px 5px;
                     cursor: pointer;
-                    border-radius: 40%;
+                    border-radius: 25px;
                     color: black;
                 }
             }

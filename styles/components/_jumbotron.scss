@@ -1,0 +1,70 @@
+.jumbo{
+    background-color: $color-theme-primary;
+    padding-top: 6rem;
+    .container{
+
+        
+        & > .jumbotron{
+            
+             display: flex;
+             flex-direction: column;
+     
+             @include lg {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-between;
+             }
+         
+             .jumbo-text{
+                 
+
+                 @include lg {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+
+                 }
+
+                 .jumbo-header{
+
+                    @include lg {
+                        & > h2{
+                            font-size: xxx-large
+                        }
+     
+                      }
+                 }
+         
+                 .jumbo.breadtext{
+         
+                 }
+         
+                 .jumbo-buttons{
+         
+                     @include arrow-button($color-theme-secondary-highlight);
+                 }
+         
+                 .swiggle{
+                     display: none;
+
+                     @include lg {
+                        display: inline;
+                        & > img{
+                            width: 100%;
+                        }
+                    }
+                 }
+             }
+         
+             .jumpoProf{
+                 & > img{
+                     width: 100%;
+                 }
+                 
+             }
+         
+         
+           
+         }
+     }
+}
