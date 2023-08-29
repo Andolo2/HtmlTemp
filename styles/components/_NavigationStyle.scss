@@ -1,0 +1,131 @@
+/* Header Styles */
+.header {
+    background-color:$color-theme-primary;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+    
+
+
+
+     & > .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        color: $font-color-primary;
+        font-family: $font-Inter;
+
+        @include lg {
+            display: flex;
+            justify-content: space-between;
+         }
+        
+
+         .logo{
+
+            @include lg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             }
+            .logo img {
+                max-width: 100%;
+                height: auto;
+    
+              
+            }
+         }
+
+        .middle-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-weight: $font-weight-light;
+            font-size: 12px;
+            
+            @include lg {
+            
+                align-items: flex-start;
+
+                .hr{
+                    border: 0.2px solid;
+                    border-color: lightgray;
+                    width: 100%;
+                    
+                }
+
+            }
+           
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                @include lg {
+                
+                flex-direction: row;
+
+                }
+                .contact-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                 
+                    @include lg{
+                        .vl{
+                            border-left: 1px solid;
+                            height: 1rem;
+                        }
+
+
+                    }
+                    
+
+                    
+
+                    .icon {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .menu-links {
+                a {
+                    color: $font-color-primary;
+                    text-decoration: none;
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        .link-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .nav-icons {
+                display: flex;
+                gap: 10px;
+
+                a {
+                    color: $font-color-primary;
+                    text-decoration: none;
+                }
+            }
+
+            .login {
+                button {
+                    background-color: $color-theme-secondary-highlight;
+                    color: #fff;
+                    border: none;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border-radius: 40%;
+                    color: black;
+                }
+            }
+        }
+    }
+}
