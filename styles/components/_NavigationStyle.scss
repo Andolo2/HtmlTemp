@@ -1,72 +1,62 @@
-/* Header Styles */
+/* Base Styles */
 .header {
-    background-color: $color-theme-primary;
+  background-color: $color-theme-primary;
     color: #fff;
     padding: 10px;
-    text-align: center;
 
-    /* Header container */
-    & > .container {
+
+   & > .container {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        align-items: center;
         gap: 20px;
-        margin: 0 auto;
-        color: $font-color-primary;
-        font-family: $font-Inter;
 
+        @include lg{
         
+                grid-template-columns: auto 1fr auto;
+                grid-template-rows: auto;
+                align-items: center;
+            
+        }
 
-        /* Logo section */
         .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            grid-column: span 1; /* Occupies 2 columns */
-
-            .logo img {
-                max-width: 100%;
-                height: auto;
+            
+            @include lg{
+                .logo {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+            
             }
         }
 
-        /* Empty column */
-        .empty-column {
-            grid-column: 3; /* Occupies 1 column */
-        }
+        .middle-section {
 
-        /* Link section (nav icons and login button) */
-        .link-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            grid-column: 5; /* Occupies 1 column */
+            @include lg{
+            
+                    grid-column: 2;
+                    grid-row: 1;
+                
+            }
 
-            /* Navigation icons */
-            .nav-icons {
-                display: flex;
-                gap: 10px;
+            .contact-info{
 
-                a {
-                    color: $font-color-primary;
-                    text-decoration: none;
+                @include lg{
+                    display: flex;
+                    
                 }
             }
-
-            /* Login button */
-            .login {
-                button {
-                    background-color: $color-theme-secondary-highlight;
-                    width: 122px;
-                    height: 48;
-                    border: none;
-                    padding: 5px 5px;
-                    cursor: pointer;
-                    border-radius: 25px;
-                    color: black;
+            .link-section {
+                /* Styles for the link section */
+                @include lg{
+                    grid-column: 3;
+                    grid-row: 1;
                 }
             }
-        }
     }
+        
+    }
+
 }
+
+
+
+

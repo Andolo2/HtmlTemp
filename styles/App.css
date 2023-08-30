@@ -10,65 +10,48 @@ body {
   box-sizing: border-box;
 }
 
-/* Header Styles */
+/* Base Styles */
 .header {
   background-color: #F0EFE9;
   color: #fff;
   padding: 10px;
-  text-align: center;
-  /* Header container */
 }
 .header > .container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
   gap: 20px;
-  margin: 0 auto;
-  color: #191919;
-  font-family: "Inter", sans-serif;
-  /* Logo section */
-  /* Empty column */
-  /* Link section (nav icons and login button) */
 }
-.header > .container .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: span 1; /* Occupies 2 columns */
+@media (min-width: 992px) {
+  .header > .container {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    align-items: center;
+  }
 }
-.header > .container .logo .logo img {
-  max-width: 100%;
-  height: auto;
+@media (min-width: 992px) {
+  .header > .container .logo .logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
-.header > .container .empty-column {
-  grid-column: 3; /* Occupies 1 column */
+@media (min-width: 992px) {
+  .header > .container .middle-section {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
-.header > .container .link-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  grid-column: 5; /* Occupies 1 column */
-  /* Navigation icons */
-  /* Login button */
+@media (min-width: 992px) {
+  .header > .container .middle-section .contact-info {
+    display: flex;
+  }
 }
-.header > .container .link-section .nav-icons {
-  display: flex;
-  gap: 10px;
+.header > .container .middle-section .link-section {
+  /* Styles for the link section */
 }
-.header > .container .link-section .nav-icons a {
-  color: #191919;
-  text-decoration: none;
-}
-.header > .container .link-section .login button {
-  background-color: #EDCF87;
-  width: 122px;
-  height: 48;
-  border: none;
-  padding: 5px 5px;
-  cursor: pointer;
-  border-radius: 25px;
-  color: black;
+@media (min-width: 992px) {
+  .header > .container .middle-section .link-section {
+    grid-column: 3;
+    grid-row: 1;
+  }
 }
 
 .jumbo {
@@ -142,4 +125,13 @@ body {
 }
 .jumbo .container > .jumbotron .jumpoProf > img {
   width: 100%;
+}
+
+.slider > .container .image-slider {
+  display: flex;
+  justify-content: space-between;
+}
+.slider > .container .image-slider > img {
+  border: 1px solid;
+  margin: 2rem 0 2rem 0;
 }/*# sourceMappingURL=App.css.map */

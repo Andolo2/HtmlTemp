@@ -1,0 +1,14 @@
+.slider{
+
+    & > .container {
+
+        .image-slider{
+            display: flex;
+            justify-content: space-between;
+            & > img{
+                border: 1px solid;
+                margin: 2rem 0 2rem 0;
+            }
+        }
+    }
+}
