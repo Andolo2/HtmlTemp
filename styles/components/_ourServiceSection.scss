@@ -1,0 +1,113 @@
+.OurServiceSection{
+    background-color: $color-theme-primary;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 10rem;
+    & > .container{
+
+        .flex-area{
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .service-text{
+
+                & > h2{
+                    color: $font-color-secondary;
+                }
+
+                & > p{
+                    font-size: 45px;
+                    color: $font-color-primary;
+                    font-family: $font-Sans;
+                    font-weight: $font-weight-bold;
+                }
+                @include xl{
+                    text-align: left;
+                }
+
+                
+            }
+
+            .service-cards{
+
+                @include xl{
+                    display: flex;
+                    
+                }
+                .service-card{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+
+                    background-color: $color-white;
+                    height: 308px;
+                    width: 333px;
+                    position: relative;
+                    padding: 2rem;
+                    & > h3{
+                        text-align: left;
+                    }
+
+                    & > p{
+                        text-align: left;
+                    }
+
+                    .vl-line{
+                      display: none;
+                        @include xl{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 50px;
+                            height: 2px;
+                            background-color: grey; // Color of the line
+                            top: 50px;
+                            left: 10%
+                        }
+
+                    }
+
+                    &:hover{
+                        background-color: $color-theme-secondary-highlight;
+                        transition: background-color 0.3s ease; 
+                    }
+
+                    .round-botton-no-text {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        padding: 30px;
+                     
+
+                        .circle-no-text {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: black; // Black circle background
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+
+                            &:hover{
+                                color: $color-theme-secondary-highlight;
+                                transition: background-color 0.3s ease; 
+                            }
+
+                            .fa-arrow-right {
+                                color: white; // Arrow color
+
+                             
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.MeetOurTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0;
+    margin-top: 3rem;
+    background-color: $color-theme-secondary-highlight;
+
+    & > .container{
+        h3 {
+            text-align: left;
+        }
+    
+        .browse-Team {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+    
+            span {
+                flex: 1;
+                text-align: left;
+            }
+    
+            .base-button {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    
+        .team-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            width: 100%;
+    
+            .team-card {
+                flex: 1;
+                background-color: #f9f9f9;
+                padding: 20px;
+                width: calc(25% - 20px);
+                text-align: center;
+    
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+    
+                h4 {
+                    margin-top: 15px;
+                }
+    
+                p {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

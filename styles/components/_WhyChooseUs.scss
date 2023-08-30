@@ -1,0 +1,66 @@
+.WhyChooseUs{
+
+    & > .container{
+
+        display: flex;
+        flex-direction: column;
+
+        @include xl{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .choose-left{
+
+            & > h3{
+                font-family: $font-Inter;
+                font-size: 18px;
+                font-weight: $font-weight-medium;
+                color: $font-color-secondary;
+            }
+
+            & > p{
+                font-size: 45px;
+                font-family: $font-Sans;
+                font-weight: $font-weight-bold;
+                color: $font-color-primary;
+            }
+
+            .choose-icons{
+              
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                
+                .fa-thumbs-up{
+                    font-size: 30px;
+                }
+           
+               .choose-text{
+
+                padding-left: 2rem;
+                & > span{
+                    font-weight: $font-weight-bold;
+                 }
+
+
+               }
+
+              
+            }
+        }
+
+        .choose-right{
+
+            & > img{
+                width: -webkit-fill-available;
+            }
+
+            @include xl{
+                width: auto;
+            }
+        }
+    }
+}

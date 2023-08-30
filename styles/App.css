@@ -308,7 +308,6 @@ body {
 
 .aboutSection > .container .about-view {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   gap: 20px;
   align-items: center;
   justify-content: space-between;
@@ -442,4 +441,286 @@ body {
 }
 .aboutSection > .container .about-view .display-about .about-links .round-button:hover {
   background-color: #EDCF87;
+}
+
+.OurServiceSection {
+  background-color: #F0EFE9;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 10rem;
+}
+.OurServiceSection > .container .flex-area {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.OurServiceSection > .container .flex-area .service-text > h2 {
+  color: #F94D1C;
+}
+.OurServiceSection > .container .flex-area .service-text > p {
+  font-size: 45px;
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .OurServiceSection > .container .flex-area .service-text {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .OurServiceSection > .container .flex-area .service-cards {
+    display: flex;
+  }
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF;
+  height: 308px;
+  width: 333px;
+  position: relative;
+  padding: 2rem;
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card > h3 {
+  text-align: left;
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card > p {
+  text-align: left;
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card .vl-line {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .OurServiceSection > .container .flex-area .service-cards .service-card .vl-line {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: grey;
+    top: 50px;
+    left: 10%;
+  }
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card:hover {
+  background-color: #EDCF87;
+  transition: background-color 0.3s ease;
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card .round-botton-no-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card .round-botton-no-text .circle-no-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card .round-botton-no-text .circle-no-text:hover {
+  color: #EDCF87;
+  transition: background-color 0.3s ease;
+}
+.OurServiceSection > .container .flex-area .service-cards .service-card .round-botton-no-text .circle-no-text .fa-arrow-right {
+  color: white;
+}
+
+.WhyChooseUs > .container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .WhyChooseUs > .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.WhyChooseUs > .container .choose-left > h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+}
+.WhyChooseUs > .container .choose-left > p {
+  font-size: 45px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #191919;
+}
+.WhyChooseUs > .container .choose-left .choose-icons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.WhyChooseUs > .container .choose-left .choose-icons .fa-thumbs-up {
+  font-size: 30px;
+}
+.WhyChooseUs > .container .choose-left .choose-icons .choose-text {
+  padding-left: 2rem;
+}
+.WhyChooseUs > .container .choose-left .choose-icons .choose-text > span {
+  font-weight: 700;
+}
+.WhyChooseUs > .container .choose-right > img {
+  width: -webkit-fill-available;
+}
+@media (min-width: 1200px) {
+  .WhyChooseUs > .container .choose-right {
+    width: auto;
+  }
+}
+
+.ProjectCase {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.ProjectCase > .container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.ProjectCase > .container .base-button {
+  display: inline-block;
+  position: relative;
+  width: 208px;
+  height: 56px;
+  background-color: #EDCF87;
+  text-align: center;
+  line-height: 56px;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.ProjectCase > .container .base-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 16px 16px 0;
+  border-color: transparent #EDCF87 transparent transparent;
+}
+.ProjectCase > .container .arrow-icon {
+  position: absolute;
+  top: 20%;
+  right: 8px;
+  transform: translateY(0%) rotate(-45deg); /* Angle the arrow */
+  color: black; /* Arrow color */
+}
+.ProjectCase > .container > h3 {
+  color: #F94D1C;
+  font-size: 18px;
+  font-weight: 500;
+}
+.ProjectCase > .container > p {
+  font-size: 45px;
+  font-weight: 700;
+  color: #191919;
+}
+.ProjectCase > .container .ProjCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.ProjectCase > .container .ProjCards .projcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Add padding as needed */
+}
+.ProjectCase > .container .ProjCards .projcard img {
+  /* Your image styles */
+}
+.ProjectCase > .container .ProjCards .projcard .proj-text {
+  border-bottom: 2px solid #000; /* Add your preferred color */
+  padding-bottom: 10px; /* Add spacing as needed */
+  margin-bottom: 10px; /* Add spacing between text and link */
+  text-align: left;
+}
+.ProjectCase > .container .ProjCards .projcard .proj-text span {
+  flex: 1;
+  /* Your text styles */
+}
+.ProjectCase > .container .ProjCards .projcard .proj-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.ProjectCase > .container .ProjCards .projcard .proj-link a {
+  text-decoration: none;
+  color: #191919;
+}
+.ProjectCase > .container .ProjCards .projcard .proj-link a:hover {
+  text-decoration: underline;
+}
+.ProjectCase > .container .ProjCards .projcard .proj-link i {
+  /* Your arrow styles */
+  margin-left: 5px; /* Add spacing between link and arrow */
+}
+
+.MeetOurTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0;
+  margin-top: 3rem;
+  background-color: #EDCF87;
+}
+.MeetOurTeam > .container h3 {
+  text-align: left;
+}
+.MeetOurTeam > .container .browse-Team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.MeetOurTeam > .container .browse-Team span {
+  flex: 1;
+  text-align: left;
+}
+.MeetOurTeam > .container .browse-Team .base-button {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.MeetOurTeam > .container .team-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.MeetOurTeam > .container .team-cards .team-card {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: calc(25% - 20px);
+  text-align: center;
+}
+.MeetOurTeam > .container .team-cards .team-card img {
+  max-width: 100%;
+  height: auto;
+}
+.MeetOurTeam > .container .team-cards .team-card h4 {
+  margin-top: 15px;
+}
+.MeetOurTeam > .container .team-cards .team-card p {
+  margin-top: 5px;
 }/*# sourceMappingURL=App.css.map */
