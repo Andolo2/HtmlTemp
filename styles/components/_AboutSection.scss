@@ -1,0 +1,88 @@
+.aboutSection {
+    & > .container {
+       
+        .about-view {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+           
+
+            @include xl {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .display-founder {
+                position: relative;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                .about-text {
+                    text-align: center;
+
+                    .founder-text{
+                        color: $font-color-secondary;
+                    }
+
+                   @include xl{
+                    text-align: center;
+                    position: absolute;
+                    bottom: 50px;
+                    
+                    left: -60px; // Adjust this value as needed to overlap the image
+                    background-color: #BEEBFF; // Semi-transparent background
+                    padding: 20px;
+                   }
+                }
+            }
+
+            .display-about {
+               height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                @include xl{
+                   justify-content: space-around;
+                   align-items: flex-start;
+                   flex-direction: column;
+                }
+
+                & > h2{
+                    font-family: $font-Inter;
+                    font-weight: $font-weight-semibold;
+                    font-size: 18px;
+                    color: $font-color-secondary;
+                }
+                 & > h4{
+                    font-family: $font-Sans;
+                    font-weight: $font-weight-bold;
+                    font-size: 45px;
+
+                }
+                 & > p{
+                    font-family: $font-Inter;
+                    color: $font-color-primary;
+                }
+               
+                .about-links {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    @include xl{
+                        flex-direction: row;
+                    }
+
+                    @include arrow-button($color-theme-secondary-highlight);
+
+                    .round-button {
+                        @include round-button(208px, 56px, #ffffff, black, $color-theme-secondary-highlight);
+                    }
+                }
+            }
+        }
+    }
+}

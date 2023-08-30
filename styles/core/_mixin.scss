@@ -38,5 +38,52 @@
     }
   }
   
-  
+  @mixin round-button($width, $height, $bg-color, $text-color, $hover-bg-color) {
+    display: flex;
+    align-items: center;
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+
+    .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 1px solid;
+        
+
+
+        .arrow-icon {
+            font-size: 18px;
+            color: $bg-color;
+        }
+    }
+
+    & > p{
+      margin: 0;
+    }
+
+    &:hover {
+        background-color: $hover-bg-color;
+    }
+}
+
+
+
+
+
+
+
+
+
   

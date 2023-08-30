@@ -3,11 +3,25 @@
     & > .container {
 
         .image-slider{
+            
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & > img{
+                border: 1px solid;
+                margin: 2rem 2rem 2rem 2rem;
+            }
+
+            @include xl{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
             & > img{
                 border: 1px solid;
                 margin: 2rem 0 2rem 0;
+            }
             }
         }
     }

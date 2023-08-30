@@ -34,24 +34,71 @@
             
                     grid-column: 2;
                     grid-row: 1;
+                 
                 
             }
 
             .contact-info{
 
+                color: $font-color-primary;
+                border-bottom: 0.5px solid;
+                border-color: $font-color-primary;
+                margin: 0 0 1rem 0 ;
+                
                 @include lg{
+
+                    .contact-content{
+                        display: flex;
+                        flex-direction: row;
+                }
                     display: flex;
+
+                    .vl {
+                        border-left: 6px solid;
+                        height: 20px;
+                        border-width: 1px;
+                        margin: 5px;
+                        border-color: $font-color-primary;
+                    
+                      
+                      }
                     
                 }
+
+                
+
+                
             }
-            .link-section {
-                /* Styles for the link section */
-                @include lg{
-                    grid-column: 3;
-                    grid-row: 1;
+
+            .menu-links{
+               
+                & > a{
+                    color: $font-color-primary;
+                    font-family: $font-Sans;
+                    text-decoration: none;
                 }
             }
+
+        
     }
+    .link-section {
+                
+        .nav-icons{
+            
+            & > a{
+                color: $font-color-primary;
+                
+            }
+
+            .login{
+                @include arrow-button($color-theme-secondary-highlight);
+            }
+        }
+          @include lg{
+              grid-column: 3;
+              grid-row: 1;
+          }
+      }
         
     }
 

@@ -1,0 +1,87 @@
+.Features {
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        @include xl{
+            flex-direction: row;
+            border: 1px solid;
+            
+            justify-content: space-around;
+        }
+
+        .feature-textbox {
+            text-align: center; 
+            @include arrow-button($color-theme-secondary-highlight);
+
+            @include xl{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column ;
+            }
+
+            .feature-text{
+               
+                & > h3{
+                    font-family: $font-Inter;
+                    color: $font-color-secondary;
+                    font-weight: $font-weight-semibold;
+                    font-size: 18px;
+                }
+                & > p{    
+                    font-family: $font-Sans;
+                    font-weight: $font-weight-bold;
+                    font-size: 45px;             
+                }
+
+               
+            }
+            
+          @include xl{
+          text-align: left;
+            }
+        }
+
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); // 2x2 grid
+            
+            @include xl{
+                grid-template-columns: repeat(2, 1fr); // 2x2 grid
+                grid-gap: 20px; // Adjust spacing between cards
+              
+    
+            }
+            .feature-card {
+                
+
+                text-align: center; 
+
+                @include xl{
+                    text-align: left;
+                    width: 307px;
+                    height: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    &:hover{
+                        background-color: $color-theme-secondary-highlight;
+                    }
+
+                    & > h4{
+                        font-weight: $font-weight-bold;
+                        font-size: 22px;
+                        font-family:$font-Sans;
+                    }
+
+                    & > i {
+                        font-size: 2em; // Adjust as needed
+                    }
+                }
+            }
+        }
+    }
+}
