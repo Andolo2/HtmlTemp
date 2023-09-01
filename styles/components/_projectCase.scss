@@ -9,10 +9,10 @@
     & > .container {
       margin-top: 20px;
       
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
 
       @include arrow-button($color-theme-secondary-highlight);
@@ -32,18 +32,24 @@
       
       .ProjCards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 20px;
-  
+        
+
+        @include lg {
+           grid-template-columns: repeat(2, 1fr);
+        }
         .projcard {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           padding: 20px; /* Add padding as needed */
-  
-          img {
-            /* Your image styles */
-          }
+          max-width: 300px;
+          
+          @include lg {
+            max-width: fit-content;
+         }
+         
   
           .proj-text {
             

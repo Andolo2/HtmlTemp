@@ -16,7 +16,10 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-    
+            
+            @include arrow-button($color-theme-secondary-highlight);
+            
+
             span {
                 flex: 1;
                 text-align: left;
@@ -32,9 +35,12 @@
     
         .team-cards {
             display: flex;
+            flex-direction: column;
             gap: 20px;
             flex-wrap: wrap;
-            width: 100%;
+            @include lg{
+                flex-direction: row
+            }
     
             .team-card {
                 flex: 1;
@@ -42,6 +48,7 @@
                 padding: 20px;
                 width: calc(25% - 20px);
                 text-align: center;
+                width: 100%;
     
                 img {
                     max-width: 100%;

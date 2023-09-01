@@ -1,0 +1,97 @@
+.TestimonialSection {
+    background-color: $color-theme-secondary-highlight;
+    padding: 50px 0;
+
+   & > .container {
+        text-align: center;
+        background-color: $color-white;
+        @include arrow-button($color-theme-secondary-highlight);
+        
+
+        & > h3 {
+            padding-top: 3rem;
+            font-size: 18px;
+            font-family: $font-Inter;
+            font-weight: font-weight-medium;
+            color: $font-color-secondary;
+            
+            
+        }
+    
+        & >p {
+            font-size: 45px;
+            color: $font-color-primary;
+            font-family: $font-Sans;
+            font-weight: $font-weight-bold;
+
+        }
+    
+        .testimonial-cards {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-direction: column;
+    
+            @include lg{
+                flex-direction: row;
+            }
+    
+            .testimonial-card {
+                background-color: #fff;
+           
+                padding: 20px;
+                margin: 10px;
+                width: 300px;
+    
+                .testimonial-top {
+    
+                    text-align: left;
+                    .stars {
+                        color: gold;
+                       
+                        margin-bottom: 10px;
+                    }
+    
+                   & > p {
+                        font-family: $font-Inter;
+                        
+                    }
+                }
+    
+                .testimonial-bottom {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+    
+                    .circle {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                       
+                        overflow: hidden;
+                        margin-right: 20px;
+    
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+    
+                    .text {
+                        text-align: left;
+                        & > p {
+                         
+                        }
+
+                        & > span{
+                            color: $font-color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   
+}
