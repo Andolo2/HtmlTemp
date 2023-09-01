@@ -1041,4 +1041,62 @@ header .container .menu .main-menu nav > a:active::after, header .container .men
   .NewsLetterSignUp > .container .input-wrapper > button {
     margin: 0;
   }
+}
+
+.Footer {
+  background-color: #0E1021;
+}
+.Footer > .container {
+  padding: 6rem;
+}
+.Footer > .container .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .Footer > .container .footer-wrapper {
+    flex-direction: row;
+  }
+}
+.Footer > .container .footer-wrapper .footer-logo {
+  max-width: 309px;
+}
+.Footer > .container .footer-wrapper .footer-logo > p {
+  color: #FFFFFF;
+  padding: 1rem;
+}
+.Footer > .container .footer-wrapper .footer-cards {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .Footer > .container .footer-wrapper .footer-cards {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.Footer > .container .footer-wrapper .footer-cards .footer-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer > .container .footer-wrapper .footer-cards .footer-card > h3 {
+  color: #FFFFFF;
+}
+.Footer > .container .footer-wrapper .footer-cards .footer-card .footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer > .container .footer-wrapper .footer-cards .footer-card .footer-links > a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.Footer > .container .footer-wrapper .footer-cards .footer-card .footer-links > a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=App.css.map */
