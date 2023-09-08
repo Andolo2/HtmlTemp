@@ -1,0 +1,98 @@
+.contact-info-boxes{
+    
+    & > .container{
+        
+        .contact-boxes{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+
+            .contact-box{
+                border: 1px solid;
+                width: 402px;
+                height: 206px;
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                & > i{
+                    border: 1px solid;
+                    padding: 1.5rem;
+                    border-radius: 50%;
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+
+        
+    }
+}
+
+.form-section{
+    
+    .container{
+        background-color: $color-theme-primary;
+        margin-top: 3rem;
+        
+        & > h3{
+            text-align: center;
+            font-size: 45px;
+            font-weight: $font-weight-bold;
+            font-family: $font-Sans;
+        }
+
+        #form{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+           
+
+            & > input{
+               width: 80%;
+               height: 56px;
+               border-radius: 25px; 
+               border: none;
+               margin: 1.5rem;
+                
+              
+
+               &::placeholder{
+                padding-left: 1rem;
+                
+               }
+
+            }
+
+            & > textarea{
+                width: 80%;
+                border-radius: 25px; 
+               border: none;
+               height: 160px;
+               &::placeholder{
+                padding-left: 1rem;
+                padding-top: 1rem;
+                
+               }
+            }
+
+            .form-submit{
+                width: 80%;
+                background-color:$color-theme-secondary-highlight;
+            }
+           
+          
+        }
+        
+    }
+}
+
+.map-section{
+    margin-top: 3rem;
+    iframe{
+        width: 100%;
+    }
+}

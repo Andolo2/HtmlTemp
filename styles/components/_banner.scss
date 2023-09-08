@@ -1,0 +1,39 @@
+.article-banner{
+    background-color: $color-theme-primary;
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .banner-content{
+            padding: 2rem 0 4rem 0;
+            text-align: center;
+
+            .banner-links{
+                
+                & > a{
+                    font-family: $font-Inter;
+                    text-decoration: none;
+                    color: $font-color-primary;
+                    
+
+                    &:hover{
+                        font-weight: $font-weight-bold ;
+                        transition: 0.3s;
+                    }
+                }
+                
+                
+            }
+
+            .banner-header{
+                font-size: 56px;
+                font-weight: $font-weight-bold;
+                font-family: $font-Sans;
+            }
+            
+        }
+    }
+}
