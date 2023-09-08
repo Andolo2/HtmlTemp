@@ -1099,4 +1099,15 @@ header .container .menu .main-menu nav > a:active::after, header .container .men
 }
 .Footer > .container .footer-wrapper .footer-cards .footer-card .footer-links > a:hover {
   text-decoration: underline;
+}
+.Footer > .container .trademark {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer > .container .trademark > span {
+  color: #FFFFFF;
+}
+.Footer > .container .trademark > a {
+  color: #FFFFFF;
 }/*# sourceMappingURL=App.css.map */
