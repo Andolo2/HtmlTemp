@@ -1,70 +1,50 @@
-.jumbo{
+.jumbo {
     background-color: $color-theme-primary;
     padding-top: 6rem;
-    .container{
+    position: relative;
 
-        
-        & > .jumbotron{
-            
-             display: flex;
-             flex-direction: column;
-     
-             @include lg {
-                 display: flex;
-                 flex-direction: row;
-                 justify-content: space-between;
-             }
-         
-             .jumbo-text{
-                 
+    .container {
+        & > .jumbotron {
+            display: flex;
+            flex-direction: column;
 
-                 @include lg {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: space-between;
+            @include lg {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
 
-                 }
+            .jumbo-text {
+                @include lg {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                }
 
-                 .jumbo-header{
-
+                .jumbo-header {
                     @include lg {
-                        & > h2{
-                            font-size: xxx-large
-                        }
-     
-                      }
-                 }
-         
-                 .jumbo.breadtext{
-         
-                 }
-         
-                 .jumbo-buttons{
-         
-                     @include arrow-button($color-theme-secondary-highlight);
-                 }
-         
-                 .swiggle{
-                     display: none;
-
-                     @include lg {
-                        display: inline;
-                        & > img{
-                            width: 100%;
+                        & > h2 {
+                            font-size: 96px;
                         }
                     }
-                 }
-             }
-         
-             .jumpoProf{
-                 & > img{
-                     width: 100%;
-                 }
-                 
-             }
-         
-         
-           
-         }
-     }
+                }
+
+                .jumbo-breadtext {
+               
+                }
+
+                .jumbo-buttons {
+                  
+                    @include arrow-button($color-theme-secondary-highlight);
+                    
+                }
+            }
+
+            .jumpoProf {
+                & > img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

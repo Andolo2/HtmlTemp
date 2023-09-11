@@ -2,7 +2,7 @@
     background-color:$color-theme-tertiary ;
 
     & > .container{
-        padding: 6rem;
+        padding: 6rem 0 6rem 0;
         .footer-wrapper{
            
             display: flex;
@@ -74,9 +74,10 @@
             
         }
         .trademark{
-            padding-top: 2rem;
+            margin-top: 3rem;
             display: flex;
             justify-content: space-between;
+            ;
             & > span{
                 color: $color-white;
             }

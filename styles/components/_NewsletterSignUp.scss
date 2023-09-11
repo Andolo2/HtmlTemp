@@ -3,6 +3,7 @@
     background-color: $color-theme-primary;
     padding-top: 3rem;
     padding-bottom: 3rem;
+   
 
 
     & > .container{
@@ -10,6 +11,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 270px;
+
+        & > h3{
+          font-size: 40px;
+          font-weight: $font-weight-bold;
+        }
 
         @include lg{
             flex-direction: row;
@@ -41,7 +48,7 @@
                 margin-right: 30px;
 
                 @include lg{
-                    width: 495px;
+                    width: 308px;
                 }
               }
           

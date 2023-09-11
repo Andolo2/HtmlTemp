@@ -5,8 +5,11 @@
     margin-bottom: 10rem;
     & > .container{
 
+       
+
         .flex-area{
 
+            
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -91,7 +94,7 @@
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
-
+                            
                             &:hover{
                                 color: $color-theme-secondary-highlight;
                                 transition: background-color 0.3s ease; 
@@ -104,8 +107,14 @@
                             }
                         }
                     }
-
+                    
                 }
+                
+            }
+
+            .service-button{
+                @include arrow-button($color-theme-secondary-highlight);
+                margin-top: 2rem;
             }
 
         }

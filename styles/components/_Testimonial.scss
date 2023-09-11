@@ -5,11 +5,11 @@
    & > .container {
         text-align: center;
         background-color: $color-white;
-        @include arrow-button($color-theme-secondary-highlight);
+        
         
 
         & > h3 {
-            padding-top: 3rem;
+            padding-top: 4rem;
             font-size: 18px;
             font-family: $font-Inter;
             font-weight: font-weight-medium;
@@ -82,6 +82,8 @@
                         text-align: left;
                         & > p {
                          
+                         font-weight: $font-weight-bold;
+                         font-family: $font-Sans;
                         }
 
                         & > span{
@@ -90,6 +92,11 @@
                     }
                 }
             }
+        }
+        .testimonial-button{
+            @include arrow-button($color-theme-secondary-highlight);
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
     }
 

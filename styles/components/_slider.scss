@@ -1,27 +1,26 @@
-.slider{
-
+.slider {
     & > .container {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
 
-        .image-slider{
-            
+        .image-slider {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            & > img{
-                border: 1px solid;
-                margin: 2rem 2rem 2rem 2rem;
+            & > img {
+               
             }
 
-            @include xl{
+            @include xl {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
-            & > img{
-                border: 1px solid;
-                margin: 2rem 0 2rem 0;
-            }
+
+                & > img {
+                  
+                }
             }
         }
     }
