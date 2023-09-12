@@ -16,8 +16,15 @@
         .feature-textbox {
             text-align: center;
 
-            @include arrow-button-long($color-theme-secondary-highlight);
-          
+            
+            .feature-button{
+                display: none;
+
+                @include lg{
+                    display: block;
+                    @include arrow-button-long($color-theme-secondary-highlight);
+                }
+            }
 
             @include xl {
                 display: flex;

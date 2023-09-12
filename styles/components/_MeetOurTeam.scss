@@ -18,8 +18,16 @@
             align-items: center;
             width: 100%;
             
-            @include arrow-button($color-theme-secondary-highlight);
             
+            
+            .team-button{
+               display: none;
+
+               @include lg{
+                display: block;
+                @include arrow-button($color-theme-secondary-highlight);
+               }
+            }
 
             span {
                 flex: 1;

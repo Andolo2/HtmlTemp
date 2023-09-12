@@ -29,9 +29,12 @@
             }
 
             .banner-header{
-                font-size: 56px;
-                font-weight: $font-weight-bold;
-                font-family: $font-Sans;
+               
+                & > h1{
+                    font-size: 56px;
+                    font-weight: $font-weight-bold;
+                    font-family: $font-Sans;
+                }
             }
             
         }

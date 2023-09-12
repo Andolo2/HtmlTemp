@@ -1,19 +1,15 @@
 .btn-yellow{
-    background-color: yellow    ;
-    border: 1pc solid yellow;
+    background-color: #F9D783;
+    
     color: $font-color-primary;
     text-decoration: none;
-    padding:  8px 25px;
-    border-radius: 25px;
+    width: 123px;
+    height: 48px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
 
-    i {
-        margin-left: 8px;
-        font-size: 0.9em;
-
-        &:hover{
-            background-color: $font-color-primary;
-        }
-    }
+   
 }
 
 header{

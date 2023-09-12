@@ -119,18 +119,21 @@
 <!-- FORM START-->
 <section class="form-section">
     <div class="container">
-        <h3>Leave us a messege</h3>
+        <h3>Leave us a message</h3>
         <h3>for any information</h3>
 
         <form id="form" action="post" method="post">
-            <label for="name"></label>
-            <input type="text" placeholder="Name" id="name" name="name" required>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Name" id="name" name="name" >
+            <div id="nameError" class="error-text"></div>
         
-            <label for="email"></label>
-            <input type="email" placeholder="Email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email" name="email" >
+            <div id="emailError" class="error-text"></div>
         
-            <label for="message"></label><br>
-            <textarea id="message" placeholder="Your messege" name="message" required></textarea>
+            <label for="message">Message:</label><br>
+            <textarea id="message" placeholder="Your message" name="message" ></textarea>
+            <div id="messageError" class="error-text"></div>
         
             <input class="form-submit" type="submit" value="Submit">
         </form>

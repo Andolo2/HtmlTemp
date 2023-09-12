@@ -4,13 +4,19 @@
         
         .contact-boxes{
             display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;
+           flex-direction: column;
+            @include lg{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+                flex-direction: row;
+            }
 
             .contact-box{
                 border: 1px solid;
                 width: 402px;
                 height: 206px;
+                border-color: lightgray;
 
                 display: flex;
                 justify-content: space-evenly;
@@ -35,8 +41,10 @@
     .container{
         background-color: $color-theme-primary;
         margin-top: 3rem;
-        
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         & > h3{
+            
             text-align: center;
             font-size: 45px;
             font-weight: $font-weight-bold;
@@ -91,7 +99,7 @@
 }
 
 .map-section{
-    margin-top: 3rem;
+    margin-top: 5rem;
     iframe{
         width: 100%;
     }
